@@ -377,6 +377,7 @@ html {
       bottom: 12vw;
       margin-left: 26.5%;
       position: fixed;
+      z-index: 3;
     }
 
     button {
@@ -515,6 +516,7 @@ html {
       position: fixed;
       bottom: 2vw;
       margin-left: -9.5%;
+      z-index: 2;
     }
 
     #anfahrt {
@@ -572,8 +574,8 @@ html {
 
 #gradient {
     position:fixed;
-    z-index:2;
-    right:0; bottom:0; left:0;
+    z-index:1;
+    right:0; bottom: 10%; left:0;
     height:20vh;
     width: 100%;
     left: 0;
