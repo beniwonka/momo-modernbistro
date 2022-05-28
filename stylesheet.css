@@ -417,7 +417,7 @@ html {
     .speisen {
       position: fixed;
       left: 5vw;
-      top: 18%;
+      top: 10%;
       bottom: 10vw;
       overflow-y: scroll;
     }
