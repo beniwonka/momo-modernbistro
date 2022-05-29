@@ -19,10 +19,37 @@ a {
   color: white;
 }
 
-
 html {
   background-color: black;
   overflow: hidden;
+}
+
+
+.introLogo {
+  width: 12.5vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  animation: fadeIn, grow-shrink;
+  animation-duration: 2.5s;
+}
+
+.loadingPage {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 4;
+  animation: slide, hide;
+  animation-delay: 2.5s;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  visibility: hidden;
 }
 
 
@@ -283,6 +310,20 @@ html {
      to {opacity: 1;}
     }
 
+    @keyframes grow-shrink {
+      85% { scale:  0.8 }
+    }
+
+    @keyframes slide {
+  from {height: 100vh; opacity: 1;}
+  to {height: 0vh; opacity: 0;}
+}
+
+  @keyframes hide {
+    0% { visibility: visible; }
+    100% { visibility: hidden; }
+  }
+
 
     .disclaimer {
       font-family: paraMedium;
@@ -339,6 +380,33 @@ html {
 
     @media (max-width: 600px){
 
+  .introLogo {
+  width: 14vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  animation: fadeIn, grow-shrink;
+  animation-duration: 2.5s;
+}
+
+.loadingPage {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 4;
+  animation: slide, hide;
+  animation-delay: 2.5s;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  visibility: hidden;
+}
+
     .inhalt p {
       margin-inline-end: 0.5em;
     }
@@ -357,7 +425,6 @@ html {
     .menu {
       height: 80vh;
       width: 40%;
-      margin-left: 1.5vw;
     }
 
   .inhalt {
@@ -375,7 +442,7 @@ html {
     .logo {
       width: 40vw;
       bottom: 12vw;
-      margin-left: 26.5%;
+      margin-left: 28%;
       position: fixed;
       z-index: 3;
     }
@@ -409,7 +476,7 @@ html {
       position: fixed;
       display: inline;
       margin-top: 2vw;
-      margin-left: 8.5vw;
+      margin-left: 8.2vw;
       width: 100%;
     }
 
@@ -524,7 +591,7 @@ html {
       width:100%;
       display: none;
       position: fixed;
-      top: 20%;
+      top: 15%;
     }
 
     .footerInhalt {
@@ -575,8 +642,8 @@ html {
 #gradient {
     position:fixed;
     z-index:1;
-    right:0; bottom: 10%; left:0;
-    height:20vh;
+    right:0; bottom: 0%; left:0;
+    height:30vh;
     width: 100%;
     left: 0;
 
