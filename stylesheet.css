@@ -20,20 +20,40 @@ a {
 }
 
 html {
-  background-color: #9CBE5F;
   overflow: hidden;
 }
 
+.background {
+  background-color: black;
+}
 
+.bubbleTea-mode {
+  background-color: #9CBE5F;
+  }
+
+
+.introLogo {
+  width: 12.5vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  animation: fadeIn, grow-shrink;
+  animation-duration: 2.5s;
+}
 
 .loadingPage {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: #9CBE5F;
+  background-color: black;
   z-index: 4;
   animation: slide, hide;
-  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
   visibility: hidden;
@@ -51,10 +71,15 @@ html {
 }
 
 
-
 @media (min-width: 601px){
 
   .active {
+  color: #D32027;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+  .activeBubbleTea {
   color: #FBB95A;
   opacity: 1;
   transition: 0.3s ease-in-out;
@@ -85,13 +110,18 @@ html {
     }
 
 
+    #bubbletea p {
+      margin-inline-end: 0.5em;
+    }
+
+
     .main {
       display: flex;
       width: 100%;
     }
 
 
-    .menu, .inhalt, .footer {
+    .menu, .inhalt, .footer, #bubbletea {
       height: 100vh; 
       width:33.33%;
     }
@@ -104,14 +134,33 @@ html {
       overflow-y: scroll;
     }
 
+      #bubbletea {
+      display: none;
+      margin-top: 0;
+      bottom: 15vw;
+      height: 80vh;
+      overflow-y: scroll;
+    }
 
-    .logo {
+
+
+    #logo {
+      width: 15vw;
+      height: auto;
+      bottom: 3vw;
+      margin-left: 9.2vw;
+      position: fixed;
+    }
+
+    #logoBubbleTea {
+      display: none;
       width: 17vw;
       height: auto;
       bottom: 3vw;
       margin-left: 7vw;
       position: fixed;
     }
+
 
 
     button {
@@ -130,13 +179,38 @@ html {
       transition: 0.5s ease-in-out;
     }
 
-     .circleBack {
+     #circleBack {
       position: absolute;
       z-index:-1;
-      bottom: -90%;
+      bottom: -85%;
       right: -40%;
       
     }
+
+    #circleBackBubble {
+      display: none;
+      position: absolute;
+      z-index:-1;
+      bottom: -85%;
+      right: -40%;
+      
+    }
+
+    .circleNavi {
+      visibility: hidden;
+      transition: .6s ease-in-out;
+      width: 33.33%;
+    }
+
+    .naviEins:hover ~ .circleNavi {
+  visibility: visible;
+  margin-left: 7.5%;
+}
+
+    .naviZwei:hover ~ .circleNavi {
+  visibility: visible;
+  margin-left: 37.5%;
+}
 
     .naviDrei {
       display: none;
@@ -155,29 +229,56 @@ html {
 
     .naviGator {
       position: fixed;
-      display: none;
+      display: inline;
       margin-top: 2vw;
       margin-left: 8vw;
       width: 33.33%;
     }
 
+    .bubbleteaNavi {
+      position: absolute;
+      height: 7.5vh;
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      align-content: left;
+    }
+
+    #dropdownSpeiseZwei {
+      list-style: none;
+      font-family: paraLight;
+      color: white;
+      font-size: 1.2vw;
+      padding-inline-start: 0;
+      margin-top: 0;
+    }
+
+    ul#dropdownSpeiseZwei li {
+    display: inline;
+    margin-inline-end: 1em;
+  }
+
+    #teas {
+      margin-top: 7.5%;
+      overflow-y: scroll;
+    }
 
     .speisen, .getraenke {
       position: fixed;
       height: 80vh;
-      margin-left: 6.5vw;
-      margin-top: 3.5vw;
+      margin-left: 10vw;
+      margin-top: 5vw;
       margin-bottom: 10vw;
       overflow-y: scroll;
     }
 
 
-    #dropdownSpeise {
-      display: inline;
+    #dropdownSpeise, #dropdownGetraenke {
+      display: none;
       list-style: none;
       font-family: paraLight;
       color: white;
-      font-size: 2.8vw;
+      font-size: 2vw;
       text-align: center;
     }
 
@@ -212,17 +313,17 @@ html {
 
 
     .inhaltSpeiseDrei, .inhaltSpeiseZwei, .inhaltSpeiseEins {
-      margin-bottom: 0.6em;
+      margin-bottom: 2em;
     }
 
 
     .speiseSubheadline {
-      display: inline;
+      display: none;
       margin-top: 0;
       position: sticky;
       font-family: paraMedium;
       font-size: 1.4vw;
-      color: #FBB95A;
+      color: white;
     }
 
      .speiseSubInfo {
@@ -230,12 +331,19 @@ html {
       margin-top: 0;
       font-family: paraMedium;
       font-size: 1.4vw;
-      color: #FBB95A;
+      color: white;
       top: 0;
     }
 
 
     .speiseNumber {
+      display: inline;
+      font-family: paraMedium;
+      font-size: 1.5vw;
+      color: #d32027;
+    }
+
+      .bubbleTeaNumber {
       display: inline;
       font-family: paraMedium;
       font-size: 1.5vw;
@@ -254,7 +362,7 @@ html {
     .speisePreis {
       display: inline;
       font-family: paraMedium;
-      font-size: 2.4vw;
+      font-size: 1.2vw;
       color: #d32027;
     }
 
@@ -262,12 +370,12 @@ html {
     .speiseInfo {
       display: inline;
       font-family: paraLight;
-      font-size: 1.8vw;
+      font-size: 1.2vw;
       color: white;
     }
 
 
-    #maki, #nigiri, #sashimi, #insideout, #tempura, #veggie, #futomaki, #mixbox, #bowl, #nudelbox {
+    #maki, #nigiri, #sashimi, #insideout, #tempura, #veggie, #futomaki, #mixbox, #bowl, #nudelbox, #milkTea, #fruitMilk, #fruitTea, #fruitYogurt, #flavouredJuice, #special {
       height: 80vh;
       top: 10%;
       bottom: 10vw;
@@ -339,6 +447,25 @@ html {
     left: 33.33%;
     width: 33.33%;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(0,0,,0) 0%, rgba(0,0,0,1) 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+
+}
+
+   #gradientBubble {
+    opacity: 0;
+    position: fixed;
+    z-index:2;
+    right:0; bottom:0%; left:0;
+    height:35vh;
+    left: 33.33%;
+    width: 33.33%;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
     background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(156,190,95,1) 50%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(156,190,95,1)));
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(156,190,95,1) 50%);
@@ -351,6 +478,18 @@ html {
 
     @media (max-width: 600px){
 
+  .introLogo {
+  width: 14vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  animation: fadeIn, grow-shrink;
+  animation-duration: 2.5s;
+}
 
 .loadingPage {
   position: absolute;
@@ -398,7 +537,16 @@ html {
     }
 
 
-    .logo {
+    #logo {
+      width: 40vw;
+      bottom: 12vw;
+      margin-left: 28%;
+      position: fixed;
+      z-index: 3;
+    }
+
+    #logoBubbleTea {
+      display: none;
       width: 40vw;
       bottom: 12vw;
       margin-left: 28%;
@@ -435,7 +583,7 @@ html {
       position: fixed;
       display: inline;
       margin-top: 2vw;
-      margin-left: 29%;
+      margin-left: 8.2vw;
       width: 100%;
     }
 
@@ -456,26 +604,27 @@ html {
       overflow-y: scroll;
     }
 
-    #dropdownSpeise {
-      display: inline;
+    #dropdownSpeise, #dropdownGetraenke {
+      display: none;
       list-style: none;
       font-family: paraLight;
-      color: #FBB95A;
+      color: white;
       font-size: 5.8vw;
       text-align: left;
     }
 
 
     .inhaltSpeiseDrei, .inhaltSpeiseZwei, .inhaltSpeiseEins {
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
     }
 
 
     .speiseSubheadline {
       font-family: paraMedium;
-      position: inline;
+      position: sticky;
       font-size: 4.2vw;
       color: white;
+      position: sticky;
       top: 0;
     }
 
@@ -489,6 +638,14 @@ html {
 
 
     .speiseNumber {
+      display: inline;
+      font-family: paraMedium;
+      font-size: 4.5vw;
+      color: #d32027;
+    }
+
+
+    .bubbleTeaNumber {
       display: inline;
       font-family: paraMedium;
       font-size: 4.5vw;
@@ -515,7 +672,7 @@ html {
     .speiseInfo {
       display: inline;
       font-family: paraLight;
-      font-size: 4.2vw;
+      font-size: 3.6vw;
       color: white;
     }
 
@@ -540,7 +697,7 @@ html {
     .disclaimerBottom {
       position: fixed;
       bottom: 2vw;
-      margin-left: -5.5%;
+      margin-left: -9.5%;
       z-index: 2;
     }
 
@@ -600,6 +757,26 @@ html {
 #gradient {
     position:fixed;
     z-index:1;
+    right:0; bottom: 0%; left:0;
+    height:30vh;
+    width: 100%;
+    left: 0;
+
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(0,0,,0) 0%, rgba(0,0,0,1) 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+
+}
+
+#gradientBubble {
+    display: none;
+    position:fixed;
+    z-index:-2;
     right:0; bottom: 0%; left:0;
     height:30vh;
     width: 100%;
