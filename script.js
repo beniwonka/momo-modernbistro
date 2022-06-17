@@ -3,14 +3,17 @@
 $('#dropdownSpeise li').click(function() {
     $('#dropdownSpeise li.active').removeClass('active');
     $('#dropdownGetraenke li.active').removeClass('active');
+    $('#dropdownGetraenke li.activeBubbleTea').removeClass('activeBubbleTea');
     $(this).addClass('active');
 	}); 
 $('.naviGator button').click(function() {
     $('.naviGator button.activeNavi').removeClass('activeNavi');
+    $('.naviGator button').removeClass('activeNaviBubbleTea');
     $(this).addClass('activeNavi');
     });
 $('.footerInhaltInhaltInhalt p').click(function() {
     $('.naviGator button.activeNavi').removeClass('activeNavi');
+    $('.naviGator button').removeClass('activeNaviBubbleTea');
     $('#dropdownSpeise li.active').removeClass('active');
     });
 });
@@ -20,14 +23,24 @@ $('.footerInhaltInhaltInhalt p').click(function() {
 $('#dropdownGetraenke li').click(function() {
     $('#dropdownGetraenke li.active').removeClass('active');
     $('#dropdownSpeise li.active').removeClass('active');
+    $('#dropdownGetraenke li').removeClass('activeBubbleTea');
     $(this).addClass('active');
+	}); 
+$('#dropdownGetraenke li.clickedBubbleTea').click(function() {
+    $('#dropdownGetraenke li.active').removeClass('active');
+    $('#dropdownSpeise li.active').removeClass('active');
+    $('.naviGator button.activeNavi').addClass('activeNaviBubbleTea');
+    $('.naviGator button.activeNavi').removeClass('activeNavi');
+    $(this).addClass('activeBubbleTea');
 	}); 
 $('.naviGator button').click(function() {
     $('.naviGator button.activeNavi').removeClass('activeNavi');
+    $('.naviGator button').removeClass('activeNaviBubbleTea');
     $(this).addClass('activeNavi');
     });
 $('.footerInhaltInhaltInhalt p').click(function() {
     $('.naviGator button.activeNavi').removeClass('activeNavi');
+    $('.naviGator button').removeClass('activeNaviBubbleTea');
     $('#dropdownSpeise li.active').removeClass('active');
     });
 });
@@ -390,6 +403,7 @@ if (naviNudelbox.style.display == 'none') {
 function openBubbleTea() {
 	var naviBubbleTea = document.getElementById('bubbletea');
 	var element = document.body;
+	var active = document.getElementsByClassName('active');
 	document.getElementById('maki').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
@@ -412,6 +426,7 @@ if (naviBubbleTea.style.display == 'none') {
 	naviBubbleTea.style.display = 'inline';
 	element.classList.remove("background");
 	element.classList.add("bubbleTea-mode");
+	active.style.color = '#FBB95A';
 
 }};
 
