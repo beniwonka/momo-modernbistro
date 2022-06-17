@@ -55,25 +55,24 @@
 				<div class="speisen no-scroll">
 				<ul id="dropdownSpeise">
 					<li onclick="openMaki()">Maki</li>
-					<li onclick="openFutoMaki()">Futo Maki</li>
+					<li onclick="openSalat()">Sashimi Salat</li>
 					<li onclick="openNigiri()">Nigiri</li>
 					<li onclick="openSashimi()">Sashimi</li>
 					<li onclick="openInsideOut()">Inside-Out</li>
 					<li onclick="openTempura()">Tempura</li>
-					<li onclick="openVeggie()">Veggie-Sushi</li>
-					<li onclick="openMixbox()">Sushi-Box</li>
+					<li onclick="openVeggie()">Veggie</li>
+					<li onclick="openFutoMaki()">Futo Maki</li>
+					<li onclick="openNudelbox()">Momo Big Box</li>
 					<li onclick="openBowl()">Bowl</li>
-					<li onclick="openNudelbox()">Nudelbox</li>
-					<li>Dessert</li>
 				</ul>
 				</div>
 
 				<div class="getraenke no-scroll">
 				<ul id="dropdownGetraenke">
 					<li class="clickedBubbleTea" onclick="openBubbleTea()" id="teenavi">Bubble Tea</li>
-					<li id="softdrinknavi">Softdrinks</li>
+					<!--<li id="softdrinknavi">Softdrinks</li>
 					<li id="kaffeenavi">Kaffee</li>
-					<li id="alknavi">Alkoholisches</li>
+					<li id="alknavi">Alkoholisches</li>-->
 				</ul>
 				</div>
 
@@ -723,11 +722,30 @@
 					</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S6</p><p class="speiseInfo"><br>Lachs, Avocado</p><p class="speisePreis">€5,50</p>
+						<p class="speiseNumber">S6</p><p class="speiseInfo"><br>Lachs-Avocado</p><p class="speisePreis">€5,50</p>
+					</div>
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+
+				<div id="sashimiSalat">
+						<p class="speiseSubheadline">Sashimi Salat »</p>
+
+						<div class="inhaltSpeiseEins">
+						<p class="speiseNumber">S7</p><p class="speiseInfo"><br>4 Scheiben Lachs mit Salat & Hausgemachter Soße</p><p class="speisePreis">€6,90</p>
 					</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S6</p><p class="speiseInfo"><br>Surimi</p><p class="speisePreis">€4,50</p>
+						<p class="speiseNumber">S8</p><p class="speiseInfo"><br>4 Scheiben Thunfisch mit Salat & Hausgemachter Soße</p><p class="speisePreis">€7,90</p>
+					</div>
+
+						<div class="inhaltSpeiseEins">
+						<p class="speiseNumber">S9</p><p class="speiseName"><br>Sashimi-Mix</p><p class="speiseInfo"><br>3 Scheiben Lachs, 2 Scheiben Thunfisch, 3 Stück Garnelen mit Salat & Hausgemachter Soße</p><p class="speisePreis">€10,90</p>
 					</div>
 
 					<br>
@@ -739,7 +757,7 @@
 				</div>
 				
 				<div id="nigiri">
-						<p class="speiseSubheadline">Nigiri 	»</p><p class="speiseSubInfo">Jeweils 2 Stück</p>
+						<p class="speiseSubheadline">Nigiri »</p><p class="speiseSubInfo">Jeweils 2 Stück</p>
 
 						<div class="inhaltSpeiseEins">
 						<p class="speiseNumber">S11</p><p class="speiseInfo"><br>Lachs</p><p class="speisePreis">€4,50</p>
@@ -766,7 +784,11 @@
 					</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S17</p><p class="speiseInfo"><br>Surimi</p><p class="speisePreis">€4,00</p>
+						<p class="speiseNumber">S17</p><p class="speiseInfo"><br>Lachs (5 Stk.)</p><p class="speisePreis">€9,00</p>
+					</div>
+
+					<div class="inhaltSpeiseEins">
+						<p class="speiseNumber">S18</p><p class="speiseInfo"><br>Surimi</p><p class="speisePreis">€4,00</p>
 					</div>
 
 					<br>
@@ -789,7 +811,7 @@
 					</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S22</p><p class="speiseInfo"><br>Sashimi Mix</p><p class="speisePreis">€13,50</p>
+						<p class="speiseNumber">S22</p><p class="speiseInfo"><br>Mix</p><p class="speisePreis">€13,50</p>
 					</div>
 				</div>
 
@@ -797,31 +819,31 @@
 						<p class="speiseSubheadline">Inside-Out » <p class="speiseSubInfo">Jeweils 8 Stück</p>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S23</p><p class="speiseInfo"><br>Lachs, Frischkäse</p><p class="speisePreis">€10,50</p>
+						<p class="speiseNumber">S23</p><p class="speiseInfo"><br>Lachs, Avocado, Frischkäse, Ummantelung mit Lachs</p><p class="speisePreis">€10,50</p>
 						</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S24</p><p class="speiseInfo"><br>Thunfisch, Avocado, Frischkäse</p><p class="speisePreis">€11,50</p>
+						<p class="speiseNumber">S24</p><p class="speiseInfo"><br>Thunfisch, Avocado, Frischkäse, Ummantelung mit Thunfisch</p><p class="speisePreis">€11,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">S25</p><p class="speiseName">California</p><p class="speiseInfo"><br>mit Garnelen, Gurke, Avocado, Frischkäse (mit Chili-Mango Ummantelt)</p><p class="speisePreis">€11,50</p>
+						<p class="speiseNumber">S25</p><p class="speiseName">California</p><p class="speiseInfo"><br>mit Gurke, Avocado, Frischkäse, Garnellen, Ummantelung mit Chili-Mango</p><p class="speisePreis">€11,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">S26</p><p class="speiseName">Teriyaki Tuna</p><p class="speiseInfo"><br>mit gekochtem Thunfisch, Gurke, Frischkäse (Röstzwiebeln, Teriyaki- Soße ummantelt)</p><p class="speisePreis">€8,50</p>
+						<p class="speiseNumber">S26</p><p class="speiseName">Teriyaki Tuna</p><p class="speiseInfo"><br>mit gekochtem Thunfisch, Röstzwiebeln, Gurken & Teriyaki Soße</p><p class="speisePreis">€8,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">S27</p><p class="speiseName">Teriyaki Lachs</p><p class="speiseInfo"><br>mit gekochtem Lachs, Gurke, Frischkäse (Röstzwiebeln, Teriyaki- Soße ummantelt)</p><p class="speisePreis">€8,50</p>
+						<p class="speiseNumber">S27</p><p class="speiseName">Teriyaki Lachs</p><p class="speiseInfo"><br>mit gekochtem Lachs, Gurken, Frischkäse, Röstzwiebeln & Teriyaki Soße</p><p class="speisePreis">€8,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">S28</p><p class="speiseName">Philadelphia Roll</p><p class="speiseInfo"><br>mit Lachs, Avocado, Frischkäse (mit Sesam ummantelt)</p><p class="speisePreis">€8,50</p>
+						<p class="speiseNumber">S28</p><p class="speiseName">Philadelphia Roll</p><p class="speiseInfo"><br>mit Lachs, Avocado, Frischkäse, mit Sesam ummantelt</p><p class="speisePreis">€8,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">S32</p><p class="speiseName">Surimi</p><p class="speiseInfo"><br>mit Gurke, Frischkäse (mit Sesam ummantelt)</p><p class="speisePreis">€8,50</p>
+						<p class="speiseNumber">S33</p><p class="speiseName">Surimi</p><p class="speiseInfo"><br>mit Gurke, Frischkäse, mit Sesam ummantelt</p><p class="speisePreis">€8,50</p>
 						</div>
 
 					<br>
@@ -836,19 +858,19 @@
 						<p class="speiseSubheadline">Tempura » <p class="speiseSubInfo">Jeweils 8 Stück</p>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S29</p><p class="speiseName">Lachs</p><p class="speiseInfo"><br>mit Avocado, Frischkäse, und Panade</p><p class="speisePreis">€11,50</p>
+						<p class="speiseNumber">S29</p><p class="speiseName">Lachs</p><p class="speiseInfo"><br>mit Lachs, Avocado, Frischkäse in Panko Panade</p><p class="speisePreis">€11,00</p>
 						</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S30</p><p class="speiseName">Hänchen</p><p class="speiseInfo"><br>mit Gurke, Avocado, Frischkäse, und Panade</p><p class="speisePreis">€11,50</p>
+						<p class="speiseNumber">S30</p><p class="speiseName">Hähnchen</p><p class="speiseInfo"><br>mit (knusprig) Avocado, Frischkäse, Gurke in Panko Panade</p><p class="speisePreis">€11,00</p>
 						</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S31</p><p class="speiseName">Garnelen</p><p class="speiseInfo"><br>mit Avocado, Frischkäse, und Panade</p><p class="speisePreis">€11,50</p>
+						<p class="speiseNumber">S31</p><p class="speiseName">Garnelen</p><p class="speiseInfo"><br>mit Avocado, Frischkäse in Panko Panade</p><p class="speisePreis">€11,00</p>
 						</div>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S33</p><p class="speiseName">Veggie</p><p class="speiseInfo"><br>mit Avocado, Frischkäse, Gurke, Paprika und Panade</p><p class="speisePreis">€10,50</p>
+						<p class="speiseNumber">S32</p><p class="speiseName">Veggie</p><p class="speiseInfo"><br>mit Avocado, Frischkäse, Gurke, Paprika in Panko Panade</p><p class="speisePreis">€10,00</p>
 
 						<br>
 					<br>
@@ -863,15 +885,15 @@
 					<p class="speiseSubheadline">Veggie »<p class="speiseSubInfo"> Jeweils 8 Stück</p>
 
 					<div class="inhaltSpeiseEins">
-					<p class="speiseNumber">V31</p><p class="speiseName">Inside-Out</p><p class="speiseInfo"><br>mit Avocado, Gurke, Paprika, Frischkäse</p><p class="speisePreis">€7,50</p>
+					<p class="speiseNumber">V31</p><p class="speiseInfo"><br>mit Avocado, Gurke, Paprika, Frischkäse, Ummantelung nach Wahl; Sesam, Schnittlauch, Röstzwiebeln, Rucola</p><p class="speisePreis">€7,50</p>
 					</div>
 
 					<div class="inhaltSpeiseEins">
-					<p class="speiseNumber">V32</p><p class="speiseName">Futo Maki</p><p class="speiseInfo"><br>mit Avocado, Gurke und Paprika</p><p class="speisePreis">€7,00</p>
+					<p class="speiseNumber">V32</p><p class="speiseInfo"><br>mit Avocado, Gurken & Paprika</p><p class="speisePreis">€7,00</p>
 					</div>
 
 					<div class="inhaltSpeiseEins">
-					<p class="speiseNumber">V33</p><p class="speiseName">Inside-Out</p><p class="speiseInfo"><br>mit Gurke, Rucola und Frischkäse</p><p class="speisePreis">€7,00</p>
+					<p class="speiseNumber">V33</p><p class="speiseInfo"><br>mit Gurke, Rucola und Frischkäse, Ummantelung nach Wahl; Sesam, Schnittlauch, Röstzwiebeln & Rucola</p><p class="speisePreis">€7,00</p>
 					</div>
 				</div>
 
@@ -879,69 +901,65 @@
 						<p class="speiseSubheadline">Futomaki » <p class="speiseSubInfo">Jeweils 8 Stück</p>
 
 						<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">S41</p><p class="speiseInfo"><br>Lachs, Avocado</p><p class="speisePreis">€8,50</p>
+						<p class="speiseNumber">S41</p><p class="speiseInfo"><br>Lachs-Avocado</p><p class="speisePreis">€8,50</p>
 					</div>
 					<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">V42</p><p class="speiseInfo"><br>Lachs, Thunfisch, Gurke</p><p class="speisePreis">€9,00</p>
+						<p class="speiseNumber">V42</p><p class="speiseInfo"><br>Lachs-Thunfisch-Gurke</p><p class="speisePreis">€9,00</p>
 					</div>
 					<div class="inhaltSpeiseEins">
-						<p class="speiseNumber">V43</p><p class="speiseInfo"><br>Knuspriges Hänchen, Gurke, Frischkäse ( Teriyaki Soße)</p><p class="speisePreis">€8,50</p>
+						<p class="speiseNumber">V43</p><p class="speiseName">Hähnchen (knusprig)</p><p class="speiseInfo"><br>mit Frischkäse, Gurke, Sesam & Teriyaki Soße</p><p class="speisePreis">€8,50</p>
 					</div>
 				</div>
 
-				<div id="mixbox">
-					<p class="speiseSubheadline">Mixbox</p>
+				<div id="nudelbox">
+					<p class="speiseSubheadline">Mix Boxen</p>
 
 					<div class="inhaltSpeiseZwei">
-					<p class="speiseNumber">M1</p><p class="speiseName">Maki Mix Box (16 Stück)</p><p class="speiseInfo"><br>4 Lachs Maki + 4 Thunfisch Maki + 4 Avocado Maki + 4 Gurken Maki</p><p class="speisePreis">€8,50</p>
+					<p class="speiseNumber">M1</p><p class="speiseName">Maki-Box (16 Stück)</p><p class="speiseInfo"><br>4x Lachs Maki, 4x Thunfisch Maki, 4x Avocado Maki, 4x Gurken Maki</p><p class="speisePreis">€8,50</p>
 					</div>
 
 					<div class="inhaltSpeiseEins">
-					<p class="speiseNumber">M2</p><p class="speiseName">Nigiri Mix Box (6 Stück)</p><p class="speiseInfo"><br>3 Lachs Nigiri + 2 Thunfisch Nigiri + 1 Garnelen Nigiri</p><p class="speisePreis">€9,00</p>
+					<p class="speiseNumber">M2</p><p class="speiseName">Nigiri-Mix (6 Stück)</p><p class="speiseInfo"><br>3x Lachs Nigiri, 2x Thunfisch Nigiri, 1x Garnelen Nigiri</p><p class="speisePreis">€9,00</p>
 					</div>
 
 					<div class="inhaltSpeiseDrei">
-					<p class="speiseNumber">M3</p><p class="speiseName">Inside Out Mix Box (8 Stück)</p><p class="speiseInfo"><br>4x Lachs, Avocado, Frischkäse (Lachs Ummantelt) 4x Knuspriges Hähnchen, Gurke, Frischkäse (Sesam Ummantelt)</p><p class="speisePreis">€9,00</p>
+					<p class="speiseNumber">M3</p><p class="speiseName">Inside Out-Mix (8 Stück)</p><p class="speiseInfo"><br>4x Lachs-Avocado-Frischkäse mit Lachs Ummantelt, 4x Hähnchen (knusprig) Frischkäse Gurke mit Sesam ummantelt</p><p class="speisePreis">€9,00</p>
 					</div>
 
 					<div class="inhaltSpeiseDrei">
-					<p class="speiseNumber">M4</p><p class="speiseName">Mix Box Lachs (12 Stück)</p><p class="speiseInfo"><br>8x Lachs, Avocado, Frischkäse (Lachs Ummantelt) 4x Lachs Nigiri</p><p class="speisePreis">€16,50</p>
+					<p class="speiseNumber">M4</p><p class="speiseName">Mix Box Lachs (12 Stück)</p><p class="speiseInfo"><br>8x Avocado Maki, Avocado Frischkäse (miit Lachs ummantelt), 4x Lachs Nigiri</p><p class="speisePreis">€16,50</p>
 					</div>
 
 					<div class="inhaltSpeiseDrei">
-					<p class="speiseNumber">M5</p><p class="speiseName">Mix Box 2 (18 Stück)</p><p class="speiseInfo"><br>8x Avocado, 4x Futo Thunfisch oder Lachs, Gurke, Frischkäse und Teriyaki Soße, 4x Tempura mit knuspriges Hähnchen, Gurke, Frischkäse und Teriyaki Soße, 2x Lachs Nigiri</p><p class="speisePreis">€16,50</p>
+					<p class="speiseNumber">M5</p><p class="speiseName">Mix Box 5 (18 Stück)</p><p class="speiseInfo"><br>8x Avocado Maki, 2x Lachs Nigiri, 4x Futo Thunfisch oder Lachs, Gurke Frischkäse und Teriyaki Soße,  4x Tempura mit knusprigem Hähnchen, Gurke, Frischkäse und Teriyaki Soße</p><p class="speisePreis">€16,50</p>
 					</div>
 
 					<div class="inhaltSpeiseDrei">
-					<p class="speiseNumber">M6</p><p class="speiseName">Mix Box 3 (22 Stück)</p><p class="speiseInfo"><br>8x Tempura mit Knusprigen Garnelen, Avocado, Frischkäse und Teriyaki Soße, 8x Inside Out Lachs, Avocado, Frischkäse und Sesam, Röstzwiebel, Rucola Umantlung, 2x Lachs Nigiri, 2x Thunfisch Nigiri, 2x Garnelen Nigiri</p><p class="speisePreis">€29,50</p>
+					<p class="speiseNumber">M6</p><p class="speiseName">Mix Box 6 (22 Stück)</p><p class="speiseInfo"><br>8x Tempura mit Knusprigen Garnelen, Avocado, Frischkäse und Teriyaki Soße, 8x Inside Out Lachs, Avocado, Frischkäse, ummantelt nach Wahl; Sesam, Röstzwiebeln, Schnittlauch, Rucola, 2x Thunfisch Nigiri, 2x Avocado Nigiri, 2x Garnelen Nigiri</p><p class="speisePreis">€29,50</p>
 					</div>
 
 					<div class="inhaltSpeiseDrei">
-					<p class="speiseNumber">M7</p><p class="speiseName">Veggi Mix Box (28 Stück)</p><p class="speiseInfo"><br>4x Avocado Maki, 4x Gurken Maki, 4x Mango Maki, 4x Paprika Maki, 8x Inside Out Avocado, Paprika, Gurken , Frischkäse und Sesam, Röstzwiebeln, Schnittlauch Umantelung, 4x Avocado Nigiri</p><p class="speisePreis">€19,50</p>
+					<p class="speiseNumber">M7</p><p class="speiseName">Veggie Mix Box (28 Stück)</p><p class="speiseInfo"><br>4x Avocado Maki, 4x Mango Maki, 4x Gurken Maki, 4x Paprika Maki, 4x Avocado Nigiri, 8x Inside Out Avocado, Gurke, Paprika, Frischkäse, ummantelt nach Wahl; Sesam, Röstzwiebeln, Schnittlauch, Rucola</p><p class="speisePreis">€18,90</p>
 					</div>
 					
 					<div class="inhaltSpeiseDrei">
-					<p class="speiseNumber">M8</p><p class="speiseName">Veggi Maki Mix Box (16 Stück)</p><p class="speiseInfo"><br>4x Avocado Maki, 4x Gurken Maki, 4x Mango Maki, 4x Paprika Maki</p><p class="speisePreis">€7,00</p>
+					<p class="speiseNumber">M8</p><p class="speiseName">Mix Box (40 Stück)</p><p class="speiseInfo"><br>8x Tempura mit Lachs, Avocado, Frischkäse & Teriyaki Soße, 8x Inside Out Lachs, Avocado, Frischkäse ummantelt nach Wahl; Sesam, Röstzwiebeln, Schnittlauch, Rucola, 2x Lachs Nigiri, 2x Thunfisch Nigiri, 2x Garnelen Nigiri, 2x Avocado Nigiri, 8x Lachs Maki, 8x Avocado Maki</p><p class="speisePreis">€39,50</p>
 					</div>
 
 					<div class="inhaltSpeiseZwei">
-					<p class="speiseNumber">M9</p><p class="speiseName">Premimum Mix Box (54 Stück)</p><p class="speiseInfo"><br>8x Tempura mit Lachs, Avocado, Frischkäse und Teriyaki Soße 8x Inside Out Lachs, Avocado, Frischkäse und Sesam, Röstzwiebel, Rucola Umantlung, 8x Lachs Maki, 8x Avocado Maki, 2x Lachs Nigiri, 2x Thunfisch Nigiri, 2x Garnelen Nigiri</p><p class="speisePreis">€39,50</p>
+					<p class="speiseNumber">M9</p><p class="speiseName">Veggi Maki Mix Box (16 Stück)</p><p class="speiseInfo"><br>4x Mango Maki, 4x Paprika Maki, 4x Avocado Maki, 4x Gurken Maki</p><p class="speisePreis">€7,00</p>
 					</div>
 
 					<div class="inhaltSpeiseZwei">
-					<p class="speiseNumber">M10</p><p class="speiseName">Mix Box 4 (38 Stück)</p><p class="speiseInfo"><br>4x Avocado Maki, 4x Gurken Maki, 4x Mango Maki, 4x Paprika Maki, 8x Inside Out Avocado, Paprika, Gurken , Frischkäse und Sesam, Röstzwiebeln, Schnittlauch Umantelung, 4x Avocado Nigiri</p><p class="speisePreis">€19,50</p>
+					<p class="speiseNumber">M10</p><p class="speiseName">Veggi Nigiri Mix Box (6 Stück)</p><p class="speiseInfo"><br>2x Avocado Nigiri, 2x Gurken Nigiri, 2x Mango</p><p class="speisePreis">€8,00</p>
 					</div>
 
 					<div class="inhaltSpeiseZwei">
-					<p class="speiseNumber">M11</p><p class="speiseName">Lachs Nigiri Mix Box</p><p class="speiseInfo"><br>5x Lachs Nigiri</p><p class="speisePreis">€9,50</p>
+					<p class="speiseNumber">M11</p><p class="speiseName">Surimi Mix Box (18 Stück)</p><p class="speiseInfo"><br>4x Inside Out Surimi, Gurke, Frischkäse & Sesam ummantelt, 4x Inside Out knusprigem Hähnchen, Gurke, Frischkäse & Sesam ummantelt, 4x Surimi Maki, 4x Hähnchen Maki, 2x Surimi Nigiri</p><p class="speisePreis">€15,00</p>
 					</div>
 
 					<div class="inhaltSpeiseZwei">
-					<p class="speiseNumber">M12<br></p><p class="speiseName">Surimi Mix Box (18 Stück)</p><p class="speiseInfo"><br>4x Inside Out Surimi, Gurke, Frischkäse und Sesam Umanntelt, 4x Tempura mit knuspriges Hähnchen, Gurke, Frischkäse und Teriyaki Soße, 4x Surimi Maki, 4x Hänchen, 2x Surimi Nigiri</p><p class="speisePreis">€15,00</p>
-					</div>
-
-					<div class="inhaltSpeiseZwei">
-					<p class="speiseNumber">M13</p><p class="speiseName">Futo Mix Box (16 Stück)</p><p class="speiseInfo"><br>4x Futo Lachs; Avocado, Frischkäse, 4X Futo Hähnchen, Gurke, Frischkäse, 4x Futo Thunfisch, Avocado, Frischkäse, 4x Futo Surimi, Gurke, Frischkäse</p><p class="speisePreis">€15,00</p>
+					<p class="speiseNumber">M12<br></p><p class="speiseName">Futo Mix Box (16 Stück)</p><p class="speiseInfo"><br>4x Futo Lachs; Avocado, Frischkäse, 4x Futo Thunfisch, Avocado, Frischkäse, 4x Futo Surimi, Gurke Frischkäse, 4x Futo Hähnchen, Gurke, Frischkäse</p><p class="speisePreis">€15,00</p>
 					</div>
 
 					<br>
@@ -953,22 +971,26 @@
 				</div>
 
 				<div id="bowl">
-						<p class="speiseSubheadline">Bowl</p>
+						<p class="speiseSubheadline">Bowl</p><p class="speiseSubInfo">mit Edamame, Wakame, Mais, Gurken, Avocado, Rucola, Cashewkerne, Röstzwiebeln, Schnittlauch, Sesam, Sushi Reis, mit Soße nach Wahl</p>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">B1</p><p class="speiseName">Knuspriges Hähnchen Bowl</p><p class="speiseInfo"><br>Mit knusprigem Hähnchen, Edemamebohnen, Gurken, Avocado,Erdnüsse, Ruccola, Cashewkerne, Röstzwiebeln, lila Zwiebeln und Sesam</p><p class="speisePreis">€14,50</p>
+						<p class="speiseInfo">Veggi Bowl</p><p class="speisePreis">€12,00</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">B2</p><p class="speiseName">Gebratene Hähnchen Bowl</p><p class="speiseInfo"><br>Mit gebratenem Hähnchen, Edemamebohnen, Gurken, Avocado,Erdnüsse, Ruccola, Cashewkerne, Röstzwiebeln, lila Zwiebeln und Sesam</p><p class="speisePreis">€14,50</p>
+						<p class="speiseInfo">Knuspriges Hähnchen Bowl</p><p class="speisePreis">€13,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">B3</p><p class="speiseName">Lachs Bowl</p><p class="speiseInfo"><br>Mit Lachs, Edemamebohnen, Gurken, Avocado,Erdnüsse, Ruccola, Cashewkerne, Röstzwiebeln, lila Zwiebeln und Sesam</p><p class="speisePreis">€14,50</p>
+						<p class="speiseInfo">Gebratene Hähnchen Bowl</p><p class="speisePreis">€13,50</p>
 						</div>
 
 						<div class="inhaltSpeiseZwei">
-						<p class="speiseNumber">B4</p><p class="speiseName">Veggie Bowl</p><p class="speiseInfo"><br>Mit Sushi-Reis, Mango, Edemamebohnen, Gurken, Avocado,Erdnüsse, Ruccola, Cashewkerne, Röstzwiebeln, lila Zwiebeln und Sesam</p><p class="speisePreis">€12,00</p>
+						<p class="speiseInfo">Lachs Bowl</p><p class="speisePreis">€14,50</p>
+						</div>
+
+						<div class="inhaltSpeiseZwei">
+						<p class="speiseInfo">gekochtem Lachs Bowl</p><p class="speisePreis">€14,50</p>
 						</div>
 
 
@@ -985,7 +1007,7 @@
 					<br>
 				</div>
 
-				<div id="nudelbox">
+				<!-- <div id="nudelbox">
 						<p class="speiseSubheadline">Nudelbox</p>
 
 						<div class="inhaltSpeiseZwei">
@@ -1013,7 +1035,7 @@
 					<br>
 					<br>
 					<br>
-				</div>
+				</div> -->
 
 				<div id="gradient">
 				</div>

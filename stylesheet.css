@@ -384,7 +384,7 @@ html {
     }
 
 
-    #maki, #nigiri, #sashimi, #insideout, #tempura, #veggie, #futomaki, #mixbox, #bowl, #nudelbox, #milkTea, #fruitMilk, #fruitTea, #fruitYogurt, #flavouredJuice, #special {
+    #maki, #sashimiSalat, #nigiri, #sashimi, #insideout, #tempura, #veggie, #futomaki, #mixbox, #bowl, #nudelbox, #milkTea, #fruitMilk, #fruitTea, #fruitYogurt, #flavouredJuice, #special {
       height: 80vh;
       top: 10%;
       bottom: 10vw;

@@ -68,7 +68,6 @@ function openAnfahrt() {
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('logo').style.display = 'block';
@@ -99,7 +98,6 @@ function openImpressum() {
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('logo').style.display = 'block';
@@ -121,13 +119,13 @@ function openMaki() {
 	var naviMaki = document.getElementById('maki');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -144,9 +142,10 @@ if (naviMaki.style.display == 'none') {
 	element.classList.add("background");
 }};
 
-function openFutoMaki() {
-	var naviFutoMaki = document.getElementById('futomaki');
+function openSalat() {
+	var naviSalat = document.getElementById('sashimiSalat');
 	var element = document.body;
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('maki').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
@@ -154,7 +153,31 @@ function openFutoMaki() {
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
+	document.getElementById('bowl').style.display = 'none';
+	document.getElementById('nudelbox').style.display = 'none';
+	document.getElementById('impressum').style.display = 'none';
+	document.getElementById('bubbletea').style.display = 'none';
+	document.getElementById('logo').style.display = 'block';
+	document.getElementById('logoBubbleTea').style.display = 'none';
+	document.getElementById('circleBack').style.display = 'block';
+	document.getElementById('circleBackBubble').style.display = 'none';
+	document.getElementById('gradient').style.opacity = '1';
+	document.getElementById('gradientBubble').style.opacity = '0';
+if (naviSalat.style.display == 'none') {
+	naviSalat.style.display = 'inline';
+}};
+
+function openFutoMaki() {
+	var naviFutoMaki = document.getElementById('futomaki');
+	var element = document.body;
+	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
+	document.getElementById('nigiri').style.display = 'none';
+	document.getElementById('sashimi').style.display = 'none';
+	document.getElementById('insideout').style.display = 'none';
+	document.getElementById('tempura').style.display = 'none';
+	document.getElementById('veggie').style.display = 'none';
+	document.getElementById('futomaki').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -175,13 +198,13 @@ function openNigiri() {
 	var naviNigiri = document.getElementById('nigiri');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -194,21 +217,19 @@ function openNigiri() {
 	document.getElementById('gradientBubble').style.opacity = '0';
 if (naviNigiri.style.display == 'none') {
 	naviNigiri.style.display = 'inline';
-	element.classList.remove("bubbleTea-mode");
-	element.classList.add("background");
 }};
 
 function openSashimi() {
 	var naviSashimi = document.getElementById('sashimi');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -229,13 +250,13 @@ function openInsideOut() {
 	var naviInsideOut = document.getElementById('insideout');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -256,13 +277,13 @@ function openTempura() {
 	var naviTempura = document.getElementById('tempura');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -283,13 +304,13 @@ function openVeggie() {
 	var veggie = document.getElementById('veggie');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -306,44 +327,18 @@ if (veggie.style.display == 'none') {
 	element.classList.add("background"); 
 }};
 
-function openMixbox() {
-	var naviMixbox = document.getElementById('mixbox');
-	var element = document.body;
-	document.getElementById('maki').style.display = 'none';
-	document.getElementById('nigiri').style.display = 'none';
-	document.getElementById('sashimi').style.display = 'none';
-	document.getElementById('insideout').style.display = 'none';
-	document.getElementById('tempura').style.display = 'none';
-	document.getElementById('veggie').style.display = 'none';
-	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
-	document.getElementById('bowl').style.display = 'none';
-	document.getElementById('nudelbox').style.display = 'none';
-	document.getElementById('impressum').style.display = 'none';
-	document.getElementById('bubbletea').style.display = 'none';
-	document.getElementById('logo').style.display = 'block';
-	document.getElementById('logoBubbleTea').style.display = 'none';
-	document.getElementById('circleBack').style.display = 'block';
-	document.getElementById('circleBackBubble').style.display = 'none';
-	document.getElementById('gradient').style.opacity = '1';
-	document.getElementById('gradientBubble').style.opacity = '0';
-if (naviMixbox.style.display == 'none') {
-	naviMixbox.style.display = 'inline'; 
-	element.classList.remove("bubbleTea-mode");
-	element.classList.add("background");
-}};
 
 function openBowl() {
 	var naviBowl = document.getElementById('bowl');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -364,13 +359,13 @@ function openNudelbox() {
 	var naviNudelbox = document.getElementById('nudelbox');
 	var element = document.body;
 	document.getElementById('maki').style.display = 'none';
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
 	document.getElementById('insideout').style.display = 'none';
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
@@ -391,6 +386,7 @@ function openBubbleTea() {
 	var naviBubbleTea = document.getElementById('bubbletea');
 	var element = document.body;
 	var active = document.getElementsByClassName('active');
+	document.getElementById('sashimiSalat').style.display = 'none';
 	document.getElementById('maki').style.display = 'none';
 	document.getElementById('nigiri').style.display = 'none';
 	document.getElementById('sashimi').style.display = 'none';
@@ -398,7 +394,6 @@ function openBubbleTea() {
 	document.getElementById('tempura').style.display = 'none';
 	document.getElementById('veggie').style.display = 'none';
 	document.getElementById('futomaki').style.display = 'none';
-	document.getElementById('mixbox').style.display = 'none';
 	document.getElementById('bowl').style.display = 'none';
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('impressum').style.display = 'none';
