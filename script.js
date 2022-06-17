@@ -73,6 +73,8 @@ function openAnfahrt() {
 	document.getElementById('nudelbox').style.display = 'none';
 	document.getElementById('logo').style.display = 'block';
 	document.getElementById('logoBubbleTea').style.display = 'none';
+	document.getElementById('bubbletea').style.display = 'none';
+	document.getElementById('impressum').style.display = 'none';
 	document.getElementById('gradient').style.opacity = '1';
 	document.getElementById('gradientBubble').style.opacity = '0';
 	anfahrt.style.display = 'none';
@@ -420,21 +422,6 @@ $('#dropdownSpeiseZwei li').click(function() {
     $(this).addClass('activeBubbleTea');
 	}); 
 });
-
-function openAnfahrt() {
-	var anfahrt = document.getElementById('anfahrt');
-	var speiseNavi = document.getElementById('dropdownSpeiseZwei');
-	document.getElementById('milkTea').style.display = 'none';
-	document.getElementById('fruitMilk').style.display = 'none';
-	document.getElementById('fruitTea').style.display = 'none';
-	document.getElementById('fruitYogurt').style.display = 'none';
-	document.getElementById('flavouredJuice').style.display = 'none';
-	document.getElementById('special').style.display = 'none';
-	anfahrt.style.display = 'none';
-if (anfahrt.style.display == 'none') {
-	anfahrt.style.display = 'inline';
-	speiseNavi.style.display = 'none';
-}}
 
 function openmilkTea() {
 	var navimilkTea = document.getElementById('milkTea');
