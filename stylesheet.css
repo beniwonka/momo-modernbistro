@@ -16,6 +16,10 @@
 }
 
 a {
+  color: black;
+}
+
+.footer a {
   color: white;
 }
 
@@ -24,7 +28,7 @@ html {
 }
 
 .background {
-  background-color: black;
+  background-color: #ecd5c3;
 }
 
 .bubbleTea-mode {
@@ -49,7 +53,7 @@ html {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #ecd5c3;
   z-index: 4;
   animation: slide, hide;
   animation-delay: 2.5s;
@@ -92,7 +96,7 @@ html {
 #impressum {
   display: none;
   font-family: paraLight;
-  color: white;
+  color: black;
 }
 
   li {
@@ -169,7 +173,7 @@ html {
       border: 0px solid transparent;
       text-shadow: 0px 0px 0px transparent;
       font-family: paraMedium;
-      color: white;
+      color: black;
       font-size: 1.4vw;
       display: inline-block;
     }
@@ -252,7 +256,7 @@ html {
     #dropdownSpeiseZwei {
       list-style: none;
       font-family: paraLight;
-      color: white;
+      color: black;
       font-size: 1.2vw;
       padding-inline-start: 0;
       margin-top: 0;
@@ -282,7 +286,7 @@ html {
       display: none;
       list-style: none;
       font-family: paraLight;
-      color: white;
+      color: black;
       font-size: 2vw;
       text-align: center;
     }
@@ -328,7 +332,7 @@ html {
       position: sticky;
       font-family: paraMedium;
       font-size: 1.4vw;
-      color: white;
+      color: black;
     }
 
      .speiseSubInfo {
@@ -336,7 +340,7 @@ html {
       margin-top: 0;
       font-family: paraMedium;
       font-size: 1.4vw;
-      color: white;
+      color: black;
       top: 0;
     }
 
@@ -352,7 +356,7 @@ html {
       display: inline;
       font-family: paraMedium;
       font-size: 1.5vw;
-      color: #FBB95A;
+      color: #d32027;
     }
 
 
@@ -376,7 +380,7 @@ html {
       display: inline;
       font-family: paraLight;
       font-size: 1.2vw;
-      color: white;
+      color: black;
     }
 
 
@@ -413,7 +417,7 @@ html {
       font-family: paraMedium;
       text-align: center;
       font-size: 0.9vw;
-      color: white;
+      color: black;
     }
 
     #impressum p {
@@ -452,12 +456,12 @@ html {
     left: 33.33%;
     width: 33.33%;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(top,  rgba(0,0,,0) 0%, rgba(0,0,0,1) 50%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,1)));
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: -moz-linear-gradient(top,  rgba(0,0,,0) 0%, rgba(236, 213, 195, 1) 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(236, 213, 195, 1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
 
 }
@@ -496,11 +500,15 @@ html {
   animation-duration: 2.5s;
 }
 
+#anfahrt p {
+  color: black;
+}
+
 .loadingPage {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #ecd5c3;
   z-index: 4;
   animation: slide, hide;
   animation-delay: 2.5s;
@@ -565,7 +573,7 @@ html {
       border: 0px solid transparent;
       text-shadow: 0px 0px 0px transparent;
       font-family: paraMedium;
-      color: white;
+      color: black;
       font-size: 4.5vw;
       display: inline-block;
     }
@@ -607,7 +615,7 @@ html {
     #dropdownSpeiseZwei {
       list-style: none;
       font-family: paraLight;
-      color: white;
+      color: black;
       font-size: 4vw;
       padding-inline-start: 0;
       margin-top: 0;
@@ -647,7 +655,7 @@ html {
       display: none;
       list-style: none;
       font-family: paraLight;
-      color: white;
+      color: black;
       font-size: 5.8vw;
       text-align: left;
     }
@@ -662,7 +670,7 @@ html {
       font-family: paraMedium;
       position: sticky;
       font-size: 4.2vw;
-      color: white;
+      color: black;
       position: sticky;
       top: 0;
     }
@@ -672,7 +680,7 @@ html {
       margin-top: 0;
       font-family: paraMedium;
       font-size: 4.2vw;
-      color: white;
+      color: black;
     }
 
 
@@ -688,7 +696,7 @@ html {
       display: inline;
       font-family: paraMedium;
       font-size: 4.5vw;
-      color: #FBB95A;
+      color: #d32027;
     }
 
 
@@ -712,7 +720,7 @@ html {
       display: inline;
       font-family: paraLight;
       font-size: 3.6vw;
-      color: white;
+      color: black;
     }
 
 
@@ -729,7 +737,7 @@ html {
       font-family: paraMedium;
       text-align: center;
       font-size: 2.5vw;
-      color: white;
+      color: black;
     }
 
 
@@ -789,7 +797,7 @@ html {
     #impressum {
       display: none;
       font-family: paraLight;
-      color: white;
+      color: black;
       font-size: 1.5vw;
     }
 
@@ -802,12 +810,12 @@ html {
     left: 0;
 
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(top,  rgba(0,0,,0) 0%, rgba(0,0,0,1) 50%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,1)));
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+    background: -moz-linear-gradient(top,  rgba(0,0,,0) 0%, rgba(236, 213, 195, 1) 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(236, 213, 195, 1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(236, 213, 195, 1) 50%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
 
 }
